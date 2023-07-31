@@ -1,0 +1,159 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: #F1F6FA;
+}
+
+header > b {
+    font-size: 4em;
+    font-family: 'Fira Code', monospace;
+    color: #1A508B;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+header > a {
+    text-decoration: none;
+    padding: 12px 16px;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #4A4A4A;
+    position: relative;
+}
+
+header > a:not(.active)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+    border-bottom: 4px solid #1A508B;
+}
+
+header > a:not(.active):hover::after {
+    transform: scaleX(1);
+}
+
+header > a.active {
+    color: #1A508B;
+}
+
+header > a.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 4px solid #1A508B;
+}
+
+footer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #1A508B;
+    background-color: #F1F6FA;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 32px;
+    background-image: url("../assets/pictures/img-1.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+    z-index: 1;
+}
+
+main h1 {
+    font-size: 3em;
+    margin-bottom: 16px;
+    z-index: 1;
+    color: #fff;
+}
+
+main h1 > span {
+    color: #1A508B;
+    font-family: 'Fira Code', monospace;
+}
+
+main p {
+    z-index: 1;
+    color: #fff;
+}
+
+.typing-text {
+    display: inline-block;
+    border-right: 0.08em solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(44, end) 1s 1 normal both,
+               blink 1s step-end infinite 5s;
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+    }
+
+    @keyframes blink {
+        75%, 100% {
+          border-color: transparent;
+        }
+    }
+
+.buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+    z-index: 1;
+}
+
+.button {
+    padding: 12px 24px;
+    background-color: #FFF ;
+    color: #1A508B;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 200ms;
+    z-index: 1;
+}
+
+.button:hover {
+    background-color: #1A508B;
+    color: #fff;
+}

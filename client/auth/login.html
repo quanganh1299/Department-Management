@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager - Login</title>
+    <link rel="icon" href="../assets/pictures/favicon.jpg">
+    <link rel="stylesheet" href="./login.css">
+    <script src="./login.js" defer></script>
+</head>
+<body>
+    <header>
+        <b>Manager</b>
+        <a href="../pages/index.html">Trang chủ</a>
+        <a href="../pages/departments.html">Phòng ban</a>
+        <a href="../pages/accounts.html">Nhân viên</a>
+        <a href="login.html" class="active">Đăng nhập</a>
+    </header>
+    <main>
+        <form action="" id="login-form">
+            <div class="form-control form-field">
+                <label for="username">Tài khoản</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="form-control form-field">
+                <label for="password">Mật khẩu</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="form-control form-submit">
+                <button type="submit">Đăng nhập</button>
+            </div>
+            <div class="form-control form-desc not-stretch">
+                <a href="#" id="forgot-password">Quên mật khẩu?</a>
+            </div>
+        </form>
+    </main>
+    <div id="forgot-password-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Quên mật khẩu</h2>
+            <p>Vui lòng nhập địa chỉ email của bạn. Chúng tôi sẽ gửi cho bạn hướng dẫn để đặt lại mật khẩu.</p>
+            <form action="" id="forgot-password-form">
+                <div class="form-control form-field">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <div class="form-control form-submit">
+                    <button type="submit">Gửi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>&copy; 2023 Manager. All rights reserved.</footer>
+</body>
+</html>
