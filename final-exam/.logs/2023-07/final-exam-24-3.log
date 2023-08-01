@@ -1,0 +1,267 @@
+2023-07-24 21:32:00.551 [restartedMain] INFO  com.vti.FinalExamApplication - Starting FinalExamApplication using Java 17 with PID 10524 (E:\Workspace\Final_Exam_Spring\final-exam\target\classes started by Quang Anh in E:\Workspace\Final_Exam_Spring\final-exam)
+2023-07-24 21:32:00.580 [restartedMain] INFO  com.vti.FinalExamApplication - No active profile set, falling back to 1 default profile: "default"
+2023-07-24 21:32:00.745 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-24 21:32:00.745 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-24 21:32:03.819 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-24 21:32:03.998 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 158 ms. Found 3 JPA repository interfaces.
+2023-07-24 21:32:06.556 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-07-24 21:32:06.574 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-24 21:32:06.579 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-24 21:32:06.579 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-24 21:32:06.773 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-24 21:32:06.778 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6027 ms
+2023-07-24 21:32:08.332 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-24 21:32:08.425 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-24 21:32:09.478 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9d759e9
+2023-07-24 21:32:09.484 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-24 21:32:13.178 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-24 21:32:15.423 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-24 21:32:16.410 [restartedMain] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-24 21:32:17.018 [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 19 mappings in 'requestMappingHandlerMapping'
+2023-07-24 21:32:21.099 [restartedMain] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-07-24 21:32:21.484 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b236df3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12f8eddb, org.springframework.security.web.context.SecurityContextHolderFilter@36e5a086, org.springframework.security.web.header.HeaderWriterFilter@687c76e8, org.springframework.web.filter.CorsFilter@444081f, com.vti.configuration.security.JwtLoginFilter@6511c56c, com.vti.configuration.security.JwtAuthenticationFilter@995c71, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1791ebc6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60a5d091, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2672e21d, org.springframework.security.web.session.SessionManagementFilter@7ebbb810, org.springframework.security.web.access.ExceptionTranslationFilter@52b268e2, org.springframework.security.web.access.intercept.AuthorizationFilter@1b845c3c]
+2023-07-24 21:32:21.497 [restartedMain] WARN  org.springframework.security.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/pages/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-07-24 21:32:21.497 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/pages/**']
+2023-07-24 21:32:21.498 [restartedMain] WARN  org.springframework.security.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/auth/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-07-24 21:32:21.499 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/auth/**']
+2023-07-24 21:32:21.500 [restartedMain] WARN  org.springframework.security.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/pages/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-07-24 21:32:21.501 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/pages/**']
+2023-07-24 21:32:21.501 [restartedMain] WARN  org.springframework.security.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/auth/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-07-24 21:32:21.501 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/auth/**']
+2023-07-24 21:32:21.501 [restartedMain] WARN  org.springframework.security.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-07-24 21:32:21.501 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/swagger-ui/**']
+2023-07-24 21:32:21.501 [restartedMain] WARN  org.springframework.security.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-07-24 21:32:21.501 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/swagger-resources/**']
+2023-07-24 21:32:21.502 [restartedMain] WARN  org.springframework.security.config.annotation.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-07-24 21:32:21.502 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/v3/api-docs/**']
+2023-07-24 21:32:22.832 [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-24 21:32:23.093 [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-24 21:32:24.080 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-07-24 21:32:24.106 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-07-24 21:32:24.222 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-24 21:32:24.255 [restartedMain] INFO  com.vti.FinalExamApplication - Started FinalExamApplication in 24.948 seconds (process running for 28.377)
+2023-07-24 21:32:32.263 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-24 21:32:32.264 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-24 21:32:32.264 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-07-24 21:32:32.264 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-07-24 21:32:32.264 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2023-07-24 21:32:32.266 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1f0dd492
+2023-07-24 21:32:32.268 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@64e221b0
+2023-07-24 21:32:32.269 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-07-24 21:32:32.269 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2023-07-24 21:32:32.332 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AuthController#create(AuthRegisterForm)
+2023-07-24 21:32:32.333 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AuthController#create(AuthRegisterForm)
+2023-07-24 21:32:32.333 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AuthController#create(AuthRegisterForm)
+2023-07-24 21:32:32.334 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AuthController#create(AuthRegisterForm)
+2023-07-24 21:32:32.334 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AuthController#create(AuthRegisterForm)
+2023-07-24 21:32:32.335 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AuthController#create(AuthRegisterForm)
+2023-07-24 21:32:32.336 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AuthController#create(AuthRegisterForm)
+2023-07-24 21:32:32.337 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /api/v1/auth/register
+2023-07-24 21:32:32.436 [http-nio-8080-exec-1] ERROR com.vti.configuration.security.JwtAuthenticationFilter - JwtAuthenticationFilter failed
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-07-14T19:45:15Z. Current time: 2023-07-24T21:32:32Z, a difference of 870437434 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541) ~[jjwt-0.9.1.jar:0.9.1]
+	at com.vti.configuration.security.JwtHandler.parseUsername(JwtHandler.java:37) ~[classes/:?]
+	at com.vti.configuration.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:49) [classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) [spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-07-24 21:32:32.709 [http-nio-8080-exec-1] ERROR com.vti.configuration.exception.ErrorHandler - JwtAuthenticationFilter failed
+org.springframework.security.authentication.BadCredentialsException: JwtAuthenticationFilter failed
+	at com.vti.configuration.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:61) [classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) [spring-security-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) [spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-10.1.10.jar:10.1.10]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-07-14T19:45:15Z. Current time: 2023-07-24T21:32:32Z, a difference of 870437434 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541) ~[jjwt-0.9.1.jar:0.9.1]
+	at com.vti.configuration.security.JwtHandler.parseUsername(JwtHandler.java:37) ~[classes/:?]
+	at com.vti.configuration.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:49) ~[classes/:?]
+	... 55 more
+2023-07-24 22:17:29.849 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:29.851 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:29.853 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:29.854 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:29.855 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:29.856 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:29.857 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:29.857 [http-nio-8080-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing OPTIONS /api/v1/departments?page=1&size=10&sort=createdAt%2Cdesc&search=&type=&minTotalMembers=&maxTotalMembers=&minCreatedDate=&maxCreatedDate=
+2023-07-24 22:17:29.880 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:29.880 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:29.881 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:29.881 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:29.882 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:29.882 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:29.883 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:29.883 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/departments?page=1&size=10&sort=createdAt%2Cdesc&search=&type=&minTotalMembers=&maxTotalMembers=&minCreatedDate=&maxCreatedDate=
+2023-07-24 22:17:30.386 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:30.387 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:30.387 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:30.388 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:30.388 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:30.389 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/departments?page=1&size=10&sort=createdAt%2Cdesc&search=&type=&minTotalMembers=&maxTotalMembers=&minCreatedDate=&maxCreatedDate=
+2023-07-24 22:17:30.398 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/departments?page=1&size=10&sort=createdAt%2Cdesc&search=&type=&minTotalMembers=&maxTotalMembers=&minCreatedDate=&maxCreatedDate=", parameters={masked}
+2023-07-24 22:17:30.400 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:31.156 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-07-24 22:17:31.159 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing [Page 1 of 1 containing com.vti.dto.DepartmentDto instances]
+2023-07-24 22:17:31.238 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2023-07-24 22:17:37.103 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.103 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.104 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.104 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.105 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.106 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.107 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.107 [http-nio-8080-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing OPTIONS /api/v1/departments
+2023-07-24 22:17:37.106 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.113 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.114 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.115 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.121 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.123 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.124 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.124 [http-nio-8080-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing OPTIONS /api/v1/accounts?page=1&size=10&sort=createdAt%2Cdesc&search=&role=&minId=&maxId=&minCreatedDate=&maxCreatedDate=
+2023-07-24 22:17:37.136 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.136 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.137 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.137 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.137 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.137 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.137 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.137 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.137 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.138 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.138 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.138 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.138 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.138 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.138 [http-nio-8080-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/departments
+2023-07-24 22:17:37.138 [http-nio-8080-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/accounts?page=1&size=10&sort=createdAt%2Cdesc&search=&role=&minId=&maxId=&minCreatedDate=&maxCreatedDate=
+2023-07-24 22:17:37.147 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.147 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.148 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.148 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.148 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.149 [http-nio-8080-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/accounts?page=1&size=10&sort=createdAt%2Cdesc&search=&role=&minId=&maxId=&minCreatedDate=&maxCreatedDate=
+2023-07-24 22:17:37.150 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/accounts?page=1&size=10&sort=createdAt%2Cdesc&search=&role=&minId=&maxId=&minCreatedDate=&maxCreatedDate=", parameters={masked}
+2023-07-24 22:17:37.151 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.AccountController#findAll(AccountFilterForm, Pageable)
+2023-07-24 22:17:37.151 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.152 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.152 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.153 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.154 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.155 [http-nio-8080-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/departments
+2023-07-24 22:17:37.155 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/departments", parameters={}
+2023-07-24 22:17:37.155 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.vti.controller.DepartmentController#findAll(DepartmentFilterForm, Pageable)
+2023-07-24 22:17:37.489 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-07-24 22:17:37.489 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing [Page 1 of 2 containing com.vti.dto.AccountDto instances]
+2023-07-24 22:17:37.525 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2023-07-24 22:17:37.577 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-07-24 22:17:37.577 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing [Page 1 of 1 containing com.vti.dto.DepartmentDto instances]
+2023-07-24 22:17:37.585 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK

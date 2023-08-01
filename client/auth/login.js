@@ -15,6 +15,9 @@ async function onLoginFormSubmit(e) {
         localStorage.setItem("bearer_token", response.headers.get("Authorization"));
         setTimeout(() => location.replace("../pages/accounts.html"), 1000);
     }
+    else {
+      alert("Mật khẩu hoặc tài khoản của bạn không đúng, mời bạn nhập lại")
+    }
 }
 
 async function onForgotPasswordFormSubmit(e) {
@@ -22,7 +25,7 @@ async function onForgotPasswordFormSubmit(e) {
   const email = document.getElementById("email");
   const formData = new FormData();
   formData.append("email", email.value);
-  const response = await fetch("http://localhost:8080/api/v1/auth/forgot-password", {
+  const response = await fetch("http://localhost:8080/api/v1/password/forgot-password", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
