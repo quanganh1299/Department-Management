@@ -1,6 +1,7 @@
 package com.vti.service;
 
 import com.vti.entity.Account;
+import com.vti.entity.Token;
 import com.vti.repository.IAccountRepository;
 import com.vti.repository.ITokenRepository;
 import jakarta.mail.MessagingException;
@@ -33,6 +34,9 @@ public class ResetPasswordService implements IResetPasswordService{
             throw new RuntimeException("Email không tồn tại.");
         }
         String token = generatePasswordResetToken();
+        if (account.getToken() == null) {
+            account.setToken(new Token());
+        }
         account.getToken().setPasswordResetToken(token);
         accountRepository.save(account);
         sendPasswordResetEmail(account.getEmail(), token);

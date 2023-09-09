@@ -11,6 +11,7 @@ public class AccountUpdateForm {
     private String password;
     private String firstName;
     private String lastName;
+    private String email;
     private Account.Role role;
     private Integer departmentId;
 }

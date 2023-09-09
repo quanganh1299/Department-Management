@@ -52,7 +52,7 @@ public class SecurityConfiguration {
         return http
                 .authorizeHttpRequests(authorizationManagerRequestMatcherRegistry -> authorizationManagerRequestMatcherRegistry
                         .requestMatchers("/api/v1/auth/register", "/api/v1/auth/login",
-                                "/api/v1/password/forgot-password", "/api/v1/password/reset-password",
+                                "/api/v1/password/**",
                                 "/swagger-ui/**", "/swagger-resources/**", "/v3/api-docs/**"
                         )
                         .permitAll()
@@ -89,7 +89,7 @@ public class SecurityConfiguration {
     @Bean //exposed cho FE
     public CorsConfigurationSource corsConfigurationSource(){
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.addAllowedOrigin("http://127.0.0.1:5500");
+        configuration.addAllowedOrigin("http://127.0.0.1:5500/");
         configuration.setAllowedMethods(Arrays.asList("HEAD", "OPTIONS", "GET", "POST", "PUT", "DELETE"));
         configuration.setAllowCredentials(true);
         configuration.addExposedHeader(HttpHeaders.AUTHORIZATION);
@@ -102,7 +102,7 @@ public class SecurityConfiguration {
 
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer(){
-        return (web) -> web.ignoring().requestMatchers("/pages/**", "/auth/**", "/password/**"
-                , "/swagger-ui/**", "/swagger-resources/**", "/v3/api-docs/**");
+        return (web) -> web.ignoring().requestMatchers("/pages/**", "/auth/**",
+                "/swagger-ui/**", "/swagger-resources/**", "/v3/api-docs/**");
     }
 }

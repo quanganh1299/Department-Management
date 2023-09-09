@@ -15,6 +15,13 @@ CREATE TABLE IF NOT EXISTS `Department` (
 	updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
+-- Create table Token
+DROP TABLE IF EXISTS `Token`;
+CREATE TABLE `Token`(
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    password_reset_token VARCHAR(255)
+);
+
 -- create table: Account
 DROP TABLE IF EXISTS `Account`;
 CREATE TABLE `Account`(
@@ -28,7 +35,9 @@ CREATE TABLE `Account`(
 	updated_at 				TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     department_id 			INT UNSIGNED,
     email					VARCHAR(50) NOT NULL UNIQUE KEY,
-    FOREIGN KEY(department_id) REFERENCES Department(id) ON DELETE SET NULL
+    token_id                INT UNSIGNED,
+    FOREIGN KEY(department_id) REFERENCES Department(id) ON DELETE SET NULL,
+    FOREIGN KEY(token_id) REFERENCES Token(id) ON DELETE SET NULL
 );
 
 -- =============================================
@@ -52,7 +61,7 @@ VALUES
 -- Password: 123456
 INSERT INTO `Account`(	username		, 						`password`									,	first_name	,	last_name		,		`role`		,	department_id   ,     email							)
 VALUES 				(	'dangblack'		,   '$2a$12$lRKESj1omJFB89wuWqHvr.ojI7nzrGdmQ8CmcnDEZf5GAGv1LU7Vi'	,	'Nguyen Hai'	,	'Dang'		,		'ADMIN'		,		'5'			,	'dang@gmail.com'				),
-					(	'quanganh'		,	'$2a$12$lRKESj1omJFB89wuWqHvr.ojI7nzrGdmQ8CmcnDEZf5GAGv1LU7Vi'	,	'Doan Quang'	,	'Anh'		,		'ADMIN'	,			'1'			,	'quanganhdoan55@gmail.com'		),
+					(	'quanganh'		,	'$2a$12$lRKESj1omJFB89wuWqHvr.ojI7nzrGdmQ8CmcnDEZf5GAGv1LU7Vi'	,	'Doan Quang'	,	'Anh'		,		'ADMIN'	,			'1'			,	'quanganhdoan1299.vn@gmail.com'		),
                     (	'vanchien'		,	'$2a$12$lRKESj1omJFB89wuWqHvr.ojI7nzrGdmQ8CmcnDEZf5GAGv1LU7Vi'	,	'Tran Van'		,	'Chien'		,		'ADMIN'		,		'1'			,	'chien@gmail.com'				),
                     (	'cocoduongqua'	,	'$2a$12$lRKESj1omJFB89wuWqHvr.ojI7nzrGdmQ8CmcnDEZf5GAGv1LU7Vi'	,	'Nguyen Co'		,	'Co'		,		'EMPLOYEE'	,		'1'			,	'co@gmail.com'					),
                     (	'doccocaubai'	,   '$2a$12$lRKESj1omJFB89wuWqHvr.ojI7nzrGdmQ8CmcnDEZf5GAGv1LU7Vi'	,	'Nguyen Doc'	,	'Co'		,		'ADMIN'		,		'2'			,	'docco@gmail.com'				),
